@@ -1,3 +1,5 @@
+
+// Fly in
 var timer = 0;
 function recheck() {
     var window_top = $(this).scrollTop();
@@ -36,4 +38,27 @@ $(function(){
   });
   
   recheck();
+});
+
+$(document).ready(function() {
+
+  //Button Scroll
+  $("#about_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 2000);
+  });
+
+  $("#projects_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 2000);
+  });
+
+  $("#contact_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 2000);
+  });
+
 });

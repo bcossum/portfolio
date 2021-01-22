@@ -35,7 +35,7 @@
   display: inline-block;
 }
 
-#header > a{
+#about_button, #projects_button, #contact_button{
   display: flex;
   align-self:center;
   padding: 10px;
@@ -53,6 +53,8 @@ h3{
   font-size: 48pt;
   text-align: center;
   padding: 10px;
+  margin-top: 10%;
+  margin-bottom: 50%;
 }
 
 #content{
@@ -66,9 +68,16 @@ h3{
   padding: 10px;
 }
 
+#about > h2{
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
 h2{
   font-size: 24pt;
   padding-bottom: 20px;
+  border-bottom: 2px solid white;
 }
 
 p{
@@ -117,7 +126,36 @@ input, textarea{
   padding: 10px;
 }
 
-img{
+#footer > a > img{
   width: 50px;
   background-color: transparent;
 }
+
+h4{
+  font-size: 18pt;
+  color: rgb(255, 0, 0);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.proj{
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.proj > img{
+  margin: 20px;
+  margin-top: 0;
+  width: 40%;
+  border: 1px solid white;
+  vertical-align: top;
+  padding: 5px;
+}
+
+.proj > p{
+  margin: 20px, 0px;
+  width: 50%;
+}
+

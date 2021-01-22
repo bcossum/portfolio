@@ -14,48 +14,70 @@
 
 <body>
   <div id="container">
+
     <div id="header">
       <h1>B.C.</h1>
-      <a href="">About</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+      <div id="about_button" >About</div>
+      <div id="projects_button">Projects</div>
+      <div id="contact_button">Contact</div>
     </div>
+
     <div id="content">
-      <h3>Hello, I'm Ben Cossum full-stack web developer.</h3>
-      <div id="about">
+      <h3>Hello, I'm Ben Cossum, full-stack web developer.</h3>
+      <div id="about" class="fly">
         <h2>About</h2>
 
         <p>I am a full stack developer living in Seattle. I attended classes at Coding Dojo where I achieved a black belt (their highest achievement) in Python. When not coding I enjoy reading, watching movies, and playing music, boardgames, and video games.</p>
 
       </div>
       
-      <div id="projects">
+      <div id="projects" class="fly">
         <h2>Projects</h2>
 
-        <h4>Board Game Tracker</h4>
-        <p>A web application designed to help users track board game plays. Users can create accounts, curate their own favorite games, and add plays for any number of board games. I made use of boardgamegeek.com's API to pull from their database rather than relying on the user to create entries for the games they wished to create plays for. Eventually I will be adding in the ability to add other users as friends allowing you to check on each other's recent plays.
-        <br>
-        <span style="font-weight: bold">Challenges:</span> Working with Board Game Geek's API was a considerable challenge. Their api is actually in XML, so I spent a lot of time trying to figure out how to even read it myself before I was able to get my code to parse the input and turn it into something a site user could understand.</p>
-        <h4>Metroidvania Video Game</h4>
-        <p>This was a group project I did with some class mates at Coding Dojo. We used the pygame library to create a short video game.
-        <br>
-        <span style="font-weight: bold">Challenges:</span> The trick I found with game design was knowing where in the never ending loop that is the game to write your code. We tried very hard to keep our code organized and our
-        method naming conventions make sense as to when the code written within would run whether that be when the game started, ended, every loop, or even only every couple of loops.</p>
+        
+        <div class="proj">
+          <div class="subcontent">
+            <h4>Board Game Tracker</h4>
+            <p>A web application designed to help users track board game plays. Users can create accounts, curate their own favorite games, and add plays for any number of board games. I made use of boardgamegeek.com's API to pull from their database rather than relying on the user to create entries for the games they wished to create plays for. Eventually I will be adding in the ability to add other users as friends allowing you to check on each other's recent plays.
+            <br>
+            <span style="font-weight: bold">Challenges:</span> Working with Board Game Geek's API was a considerable challenge. Their api is actually in XML, so I spent a lot of time trying to figure out how to even read it myself before I was able to get my code to parse the input and turn it into something a site user could understand.</p>
+          </div>
+          <img src="static/img/bg_tracker.PNG" alt="Image of Board Game Tracker App">
+        </div>
+        
+
+        <div class="proj">
+          <img src="static/img/pygame_proj.PNG" alt="Image of Pygame Project">
+          <div class="subcontent">
+            <h4>Metroidvania Video Game</h4>
+            <p>This was a group project I did with some class mates at Coding Dojo. We used the pygame library to create a short video game.
+            <br>
+            <span style="font-weight: bold">Challenges:</span> The trick I found with game design was knowing where in the never ending loop that is the game to write your code. We tried very hard to keep our code organized and our
+            method naming conventions make sense as to when the code written within would run whether that be when the game started, ended, every loop, or even only every couple of loops.</p>
+          </div>
+
+        </div>
       </div>
 
-      <div id="contact">
+      <div id="contact" class="fly">
         <h2>Contact</h2>
-        <form action="" method="POST">
+        <form method="POST">
           {% csrf_token %}
-          <input type="text" placeholder="Name" name="name">
-          <input type="text" placeholder="Email" name="email">
-          <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+          
+          <input type="text" name="name" placeholder="Name">
+          
+          <input type="text" name="email" placeholder="Email">
+          
+          <textarea name="message" cols="30" rows="10"></textarea>
+
+          <input type="submit" value="Send Message">
 
         </form>
+
       </div>
-      <div id="footer">
-        <a href=""><img src="static/img/GitHub.png" alt="Git Hub Icon"></a>
-        <a href=""><img src="static/img/linkedin.png" alt="LinkedIn Icon"></a>
+      <div id="footer" class="fly">
+        <a href="https://github.com/bcossum"><img src="static/img/GitHub.png" alt="Git Hub Icon"></a>
+        <a href="https://www.linkedin.com/in/ben-cossum-a855476a/"><img src="static/img/linkedin.png" alt="LinkedIn Icon"></a>
       </div>
     </div>
   </div>
