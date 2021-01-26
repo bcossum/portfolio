@@ -40,6 +40,7 @@ $(function(){
   recheck();
 });
 
+
 $(document).ready(function() {
 
   //Button Scroll
