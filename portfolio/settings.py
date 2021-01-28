@@ -26,12 +26,7 @@ SECRET_KEY = secrets['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    server {
-    listen 80 default_server;
-    return 444;
-    }
-]
+ALLOWED_HOSTS = ['bencossum.com', '18.221.143.198', 'localhost']
 
 
 # Application definition
