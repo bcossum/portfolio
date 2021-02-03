@@ -162,7 +162,7 @@ h4{
   width: 50%;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 1079px){
 
   #content{
     margin: 0;
@@ -200,7 +200,7 @@ h4{
   }
 }
 
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 1080px){
   .sm{
     display: none;
   }
